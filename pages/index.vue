@@ -8,6 +8,19 @@
       </li>
     </ul>
     <img src="./../assets/cat.jpg" alt="画像テスト">
+    <div>
+      <!--p>Vuexクラシックモード</p-->
+      <!--p>{{$store.state.message}}</p-->
+      <!--button v-on:click="$store.commit('updateMessage', 'ミューテーションからペイロード引数で更新')">ミューテーションからのStoreデータの更新</button-->
+      <!--button v-on:click="$store.dispatch('updateMessageAction', 'アクションからペイロード引数で更新')">アクションからのStoreデータの更新</button-->
+    </div>
+    <div>
+      <p>Vuexモジュールモード</p>
+      <p>{{$store.state.modulemode.message}}</p>
+      <button v-on:click="$store.commit('modulemode/updateMessage', 'ミューテーションからペイロード引数で更新')">ミューテーションからのStoreデータの更新</button>
+      <button v-on:click="$store.dispatch('modulemode/updateMessageAction', 'アクションからペイロード引数で更新')">アクションからのStoreデータの更新</button>
+    </div>
+
   </section>
 
 </template>
