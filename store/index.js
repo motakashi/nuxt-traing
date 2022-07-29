@@ -25,3 +25,9 @@
 // }
 
 // export default createStore
+
+import { vuexfireMutations } from 'vuexfire'
+
+export const mutations = {
+  ...vuexfireMutations
+}
