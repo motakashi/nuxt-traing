@@ -10,8 +10,8 @@ module.exports = {
     'json'
   ],
   transform: {
-    '^.+\\.js$': 'babel-jest',
-    '.*\\.(vue)$': 'vue-jest'
+    '.*\\.(vue)$': 'vue-jest',
+    "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
   },
   collectCoverage: true,
   collectCoverageFrom: [
